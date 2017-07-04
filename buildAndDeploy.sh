@@ -1,7 +1,7 @@
 #!/bin/sh
 
-mvn clean
-mvn package
+mvn clean -f pom.xml
+mvn package -f pom.xml
 mvn install:install-file -Dfile=serviceManagerCommon/target/serviceManagerCommon-1.0-SNAPSHOT.jar -DgroupId=yanbinwa -DartifactId=serviceManagerCommon -Dversion=1.0-SNAPSHOT -Dpackaging=jar
 
 mvn clean -f pom_rest.xml
