@@ -9,5 +9,6 @@
     <module>serviceManagerOrchestration</module>
     <module>serviceManagerCollection</module>
     <module>serviceManagerCache</module>
+    <module>serviceManagerAggregation</module>
   </modules>
 </project>
