@@ -11,6 +11,8 @@ cp /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerO
 cp /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerCollection/target/serviceManagerCollection-1.0-SNAPSHOT.jar /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package/collection
 cp /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerCache/target/serviceManagerCache-1.0-SNAPSHOT.jar /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package/cache
 cp /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerAggregation/target/serviceManagerAggregation-1.0-SNAPSHOT.jar /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package/aggregation
+cp /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerConfig/target/serviceManagerConfig-1.0-SNAPSHOT.jar /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package/config
+cp /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerDeploy/target/serviceManagerDeploy-1.0-SNAPSHOT.jar /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package/deploy
 
 
 scp -r /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/conf /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/script /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/target /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/template root@docker:/root/yanbinwa/ansible/

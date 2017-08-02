@@ -10,5 +10,7 @@
     <module>serviceManagerCollection</module>
     <module>serviceManagerCache</module>
     <module>serviceManagerAggregation</module>
+    <module>serviceManagerConfig</module>
+    <module>serviceManagerDeploy</module>
   </modules>
 </project>
