@@ -11,16 +11,16 @@ if [ "$SKIP_BUILD" != "skip"  ]; then
   mvn clean -f pom_rest.xml
   mvn package -f pom_rest.xml
 
-  cp /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerOrchestration/target/serviceManagerOrchestration-1.0-SNAPSHOT.jar /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package/orchestration
-  cp /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerCollection/target/serviceManagerCollection-1.0-SNAPSHOT.jar /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package/collection
-  cp /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerCache/target/serviceManagerCache-1.0-SNAPSHOT.jar /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package/cache
-  cp /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerAggregation/target/serviceManagerAggregation-1.0-SNAPSHOT.jar /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package/aggregation
-  cp /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerConfig/target/serviceManagerConfig-1.0-SNAPSHOT.jar /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package/config
-  cp /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerDeploy/target/serviceManagerDeploy-1.0-SNAPSHOT.jar /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package/deploy
+  cp serviceManagerOrchestration/target/serviceManagerOrchestration-1.0-SNAPSHOT.jar serviceManagerSetup/package/orchestration
+  cp serviceManagerCollection/target/serviceManagerCollection-1.0-SNAPSHOT.jar serviceManagerSetup/package/collection
+  cp serviceManagerCache/target/serviceManagerCache-1.0-SNAPSHOT.jar serviceManagerSetup/package/cache
+  cp serviceManagerAggregation/target/serviceManagerAggregation-1.0-SNAPSHOT.jar serviceManagerSetup/package/aggregation
+  cp serviceManagerConfig/target/serviceManagerConfig-1.0-SNAPSHOT.jar serviceManagerSetup/package/config
+  cp serviceManagerDeploy/target/serviceManagerDeploy-1.0-SNAPSHOT.jar serviceManagerSetup/package/deploy
 
 fi 
 
-scp -r /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/conf /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/package /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/script /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/target /Users/yanbinwa/Documents/workspace/springboot/serviceManager/serviceManagerSetup/template root@docker:/root/yanbinwa/ansible/
+scp -r serviceManagerSetup/conf serviceManagerSetup/package serviceManagerSetup/script serviceManagerSetup/target serviceManagerSetup/template root@docker:/root/yanbinwa/ansible/
 
 
 ./deploy.sh docker root /root/yanbinwa/ansible/script
